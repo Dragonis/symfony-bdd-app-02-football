@@ -7,7 +7,39 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+    {% block body %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+    <ul>
+        <li>
+            <a href="{{ path('admin_country') }}">
+                Countries
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('admin_league') }}">
+                Leagues
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('admin_team') }}">
+                Teams
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('admin_player') }}">
+                Players
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('admin_game') }}">
+                Games
+            </a>
+        </li>
+        <li>
+            <a href="{{ path('admin_event') }}">
+                Events
+            </a>
+        </li>
+    </ul>
     </body>
 </html>
